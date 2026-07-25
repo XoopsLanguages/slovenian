@@ -1,0 +1,37 @@
+<div class="outer" id="help-template">
+<h1 class="head">Pomoč: Predloge</h1>
+<h4 class="odd">Opis</h4>
+<p class="even">
+        XOOPS omogoča nekaj ločevanja med dejansko predstavitvijo spletnega mesta (»<em>koža</em>"ali uporabniški vmesnik) in kodo, ki se izvaja zadaj. Prvo upravlja prefinjen mehanizem, ki temelji na grafičnih temah. Tema lahko v svoji osnovni obliki vključuje bistveni HTML
+        predloge, ki določajo vizualni vmesnik spletnega mesta, kot tudi slogovne liste in slike, potrebne za dopolnitev tega vizualnega vmesnika. Teme je mogoče preklapljati v skrbniškem vmesniku, tako da je sprememba celotnega videza mesta XOOPS le stvar spreminjanja vrednosti
+        izbirnik in kliknite »Sprejmi«. XOOPS skrbnikom spletnega mesta omogoča tudi, da uporabnikom omogočijo izbiro med nekaterimi razpoložljivimi temami.<br/><br/>
+
+        Na splošno velja, a <strong><em>tema</em></strong> je vizualni okvir spletnega mesta na visoki ravni: tema definira na primer splošno postavitev mesta; po drugi strani pa običajno ne definira specifične porazdelitve vsebine znotraj bloka. S tem se ukvarja a
+        druga entiteta, imenovana a <em><strong>set predlog</strong></em>. Komplet predlog<em> </em>je skupek predlog HTML, ki določajo predstavitev vsebine v vseh blokih, ki tvorijo spletno mesto XOOPS. Če želimo bolj jasno metaforo za to, bi lahko rekli, da je tema kot
+        arhitekt hiše, medtem ko je komplet šablon kot notranji opremljevalec. Prvi postavlja zidove in določa splošno distribucijo, drugi pa je zadolžen za "<em>oblačenje</em>” te stene.<br/><br/>
+
+        Če je aktivna tema preprosta, ki vključuje samo datoteko teme, datoteke CSS in nekaj slik, XOOPS uporablja privzeti nabor predlog za definiranje predstavitve blokov. Vendar pa so nekatere zapletene teme dovolj prefinjene, da vključujejo svoj nabor predlog. V tem primeru spletno mesto
+        skrbnik mora uporabiti skrbniški vmesnik za nastavitev teme in nabora predlog. <br/><br/>
+
+        Kako je s temo <em>čarovnija</em> dosežen? To pomeni, kako lahko predloge HTML vključujejo dinamično vsebino? To se ne naredi z ogledali in dimom, ampak s pametnim mehanizmom predloge, imenovanim
+        <strong><a href="https://www.smarty.net/" rel="external">Pametno</a></strong> , ki naredi funkcijo tistega, kar se je včasih imenovalo
+        <em><strong>interpolacija spremenljivke</strong></em>. Na preprost način bi lahko rekli, da sistem XOOPS uporablja datoteke PHP za shranjevanje logike modulov (dostop do baze podatkov, dodeljevanje spremenljivk, upravljanje pravic ...), datoteke HTML z vstavljenimi spremenljivkami Smarty za upravljanje
+        dejanski vizualni vmesnik in motor Smarty za vstavljanje vrednosti in nizov na določena mesta v HTML, ki gradi strani, ki jih vidi končni uporabnik. Skratka, kaj to pomeni za vas, je mogoče enostavno povzeti: zahvaljujoč svojemu sistemu tem XOOPS omogoča oblikovalcem spletnih mest, da zgradijo več
+        zanimiva in vizualno osupljiva spletna mesta brez posebne skrbi, kaj se dogaja pod pokrovom.
+    </p>
+<h4 class="odd">Kloniranje in prenos naborov predlog</h4>
+<p class="even">
+        Če želite ustvariti nabor predlog po meri, lahko naredite kopijo privzetega nabora (ali katerega koli drugega), tako da izberete '<em>klon</em>’ (pozvani boste, da daste novemu nizu ime). Za razliko od privzetih je druge nabore predlog mogoče poljubno urejati. Lahko tudi shranite kopijo a
+        predlogo nastavite na disk tako, da izberete
+imenik<em>prenos</em>’ ali jo odstranite z ‘<em>izbriši</em>’ povezava. Včasih boste morda videli tudi dodatno "<em>Ustvari</em>’ poleg novih modulov, za katere predloge še niso bile izdelane.
+    </p>
+<h4 class="odd">Urejanje predlog</h4>
+<p class="even">
+        Celoten seznam razpoložljivih predlog si lahko ogledate z brskanjem po drevesnem pogledu imenika. Ko izberete predlogo, jo bo XOOPS odprl v urejevalniku, kjer jo lahko urejate. <br/><br/>
+
+        Med urejanjem predlog morate omogočiti nastavitev, ki samodejno posodablja datoteke .tpl predloge modula, če so v imeniku teme/vaša tema/predloge novejše datoteke za trenutno temo (Sistemski modul -&gt; Nastavitve -&gt; Splošne nastavitve -&gt; Posodobite datoteke .tpl predloge modula
+        iz imenika tem/vaše teme/predlog? -&gt; '<em>Da</em>’). To je treba izklopiti, ko bo spletno mesto postalo javno.<br/><br/>
+        Če pomotoma pokvarite predlogo, ne pozabite, da lahko pridobite '<em>dobro</em>’ kopirajte iz privzetega nabora predlog. Če delate z nestandardnimi predlogami, je morda dobro, da shranite kopijo na disk, preden jih začnete spreminjati.
+
+    </p>
+</div>

@@ -1,0 +1,665 @@
+JEZIKOVNE RAZLIKE
+=====================
+
+Spodaj so jezikovne razlike od različice do naslednje različice.
+
+================================
+2025/03/30: Različica 2.7.0-Betas (prej izdana kot 2.5.12-Betas)
+================================
+/htdocs/modules/system/language/english/admin.php
+- dodana define('_AM_SYSTEM_MENUS', 'Meniji');
+- dodana define('_AM_SYSTEM_MENUS_DESC', 'Upravljanje navigacijskih menijev po spletnem mestu');
+
+/htdocs/modules/system/language/english/modinfo.php
+- dodana define('_MI_SYSTEM_MENUS_ACTIVE', 'Omogoči sistem menijev');
+- dodano define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Omogoči vgrajen sistem upravljanja menijev za navigacijo po spletnem mestu');
+
+/htdocs/modules/system/language/english/admin/menus.php (NOVA DATOTEKA)
+Obe polji
+- dodan define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Upravitelj menijev');
+- dodana define('_AM_SYSTEM_MENUS_NAV_BACK', 'Nazaj na seznam menijev');
+- ​​dodana define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Pogled kategorije');
+- dodano define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Namigi:</strong><ul>...');
+- dodana define('_AM_SYSTEM_MENUS_ACTIVE', 'Aktivno');
+- dodana define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Omogočeno');
+- dodana define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Onemogočeno');
+- dodano define('_AM_SYSTEM_MENUS_SAVED', 'Uspešno shranjeno');
+- dodano define('_AM_SYSTEM_MENUS_DELETED', 'Uspešno izbrisano');
+- dodano define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Naročilo shranjeno');
+- dodana define('_AM_SYSTEM_MENUS_LISTCAT', 'Seznam kategorij');
+- dodano define('_AM_SYSTEM_MENUS_LISTITEM', 'Elementi seznama');
+- ​​dodana define('_AM_SYSTEM_MENUS_ADDCAT', 'Dodaj kategorijo');
+- dodana definicija ('_AM_SYSTEM_MENUS_EDITCAT', 'Urejanje kategorije');
+- dodana define('_AM_SYSTEM_MENUS_DELCAT', 'Izbriši kategorijo');
+- dodana define('_AM_SYSTEM_MENUS_CATTITLE', 'Naslov kategorije');
+- dodano define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Tu je mogoče uporabiti ime jezikovne konstante (npr. MENUS_HOME), tako da je oznaka prevedljiva.');
+Iskalniki
+- dodana define('_AM_SYSTEM_MENUS_CATPREFIX', 'Predpona (HTML)');
+- dodano define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Izbirna oznaka, prikazana pred naslovom kategorije, kot je ikona Font Awesome.');
+- dodana define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Pripona (HTML)');
+- dodano define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Izbirna oznaka, prikazana za naslovom kategorije.');
+- dodana definicija ('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- dodano define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Povezava za samo kategorijo, kot je "index.php" ali absolutni URL.');
+- ​​dodana definicija ('_AM_SYSTEM_MENUS_CATTARGET', 'Ciljna povezava');
+- dodana define('_AM_SYSTEM_MENUS_CATPOSITION', 'Položaj');
+- dodano define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Ali ste prepričani, da želite izbrisati kategorijo "%s" in vse njene elemente?');
+- dodano define('_AM_SYSTEM_MENUS_ADDITEM', 'Dodaj element');
+- dodana define('_AM_SYSTEM_MENUS_EDITITEM', 'Uredi element');
+- dodana define('_AM_SYSTEM_MENUS_DELITEM', 'Izbriši element');
+- ​​dodana define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Naslov predmeta');
+- dodano define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Tu je mogoče uporabiti ime jezikovne konstante, tako da je oznaka prevedljiva.');
+- dodana define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Predpona (HTML)');
+- ​​dodano define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Izbirna oznaka, prikazana pred naslovom predmeta, kot je ikona Font Awesome.');
+- dodana define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Pripona (HTML)');
+- dodano define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Izbirna oznaka, prikazana za naslovom predmeta. Podpira ogrado <{xoInboxCount}>.');
+- dodana definicija ('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- dodana definicija ('_AM_SYSTEM_MENUS_ITEMTARGET', 'Cilj povezave');
+- dodano define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Položaj');
+- dodan define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Nadrejeni element');
+- dodana definicija ('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Kategorija');
+- ​​dodano define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Ali ste prepričani, da želite izbrisati postavko "%s" in njene podpostavke?');
+- dodano define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Isto okno');
+- dodana define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Novo okno');
+- dodano define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Skupine, ki lahko vidijo to kategorijo');
+- dodano define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Uporabniki morajo imeti dostop do kategorije, preden kateri koli njen element postane viden.');
+- dodano define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Skupine, ki lahko vidijo ta element');
+- dodano define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Dovoljenja elementov se preverijo po dovoljenju nadrejene kategorije.');
+- dodana define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Kategorije ni bilo mogoče najti');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Zaščitene kategorije ni mogoče izbrisati');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Ni mogoče aktivirati: kategorija je neaktivna');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Elementa ni bilo mogoče najti');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Zaščitenega elementa ni mogoče izbrisati');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Izbran je neveljaven nadrejeni element');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Nadrejenega ni mogoče nastaviti: ustvaril bi krožno referenco');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Največja globina gnezdenja (3 ravni) je presežena');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Ni mogoče aktivirati: nadrejeni element je neaktiven');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'V tej kategoriji ni elementov podmenija.');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Omogoči ta element pred urejanjem');
+- dodano define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Omogoči ta element pred brisanjem');
+- dodana definicija ('MENUS_HOME', 'Domov');
+- dodana definicija ('MENUS_ADMIN', 'Administracija');
+- dodana definicija ('MENUS_ACCOUNT', 'Račun');
+- dodana definicija ('MENUS_ACCOUNT_EDIT', 'Uredi račun');
+- dodana definicija ('MENUS_ACCOUNT_LOGIN', 'Prijava');
+- ​​dodana definicija ('MENUS_ACCOUNT_LOGOUT', 'Odjava');
+- dodana definicija ('MENUS_ACCOUNT_REGISTER', 'Prijava');
+- dodana define('MENUS_ACCOUNT_MESSAGES', 'Sporočila');
+- dodana definicija ('MENUS_ACCOUNT_NOTIFICATIONS', 'Obvestila');
+- dodana definicija ('MENUS_ACCOUNT_TOOLBAR', 'Orodna vrstica');
+
+/htdocs/modules/system/constants.php
+- dodana definicija ('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "Blok 'Čakajoče vsebine' je zastarel od XOOPS 2.5.11, prosimo, uporabite Čakajoči modul");
+
+/htdocs/install/language/english/welcome.php
+- posodobljeni različici PHP & MySQL
+
+/htdocs/modules/pm/language/english/main.php
+- posodobljeno define('_MD_PM_EMAIL_DESC', 'Dragi %s, to sporočilo je bilo preneseno iz vašega računa na ' . $GLOBALS['xoopsConfig']['sitename']);
+Povezava
+- posodobljeno define('_MD_PM_EMAIL_DESC', 'Dragi %s, to sporočilo je bilo preneseno iz vašega računa na ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- posodobljena definicija('_US_SORRYNOTFOUND', 'Žal ni bilo najdenih ustreznih podatkov o uporabniku.');
+- posodobljena define('_US_SORRYNOTFOUND', 'Če se račun ujema z navedenimi informacijami, bomo obdelali vašo zahtevo. Če v kratkem ne prejmete e-pošte, preverite mapo z vsiljeno pošto ali se obrnite na skrbnika spletnega mesta.');
+
+- posodobljena definicija ('_US_PWDMAILED', 'Geslo za %s poslano.');
+- posodobljeno define('_US_PWDMAILED', 'Če obstaja račun za to e-pošto, boste prejeli navodila za ponastavitev gesla. Po potrebi preverite mapo z neželeno pošto ali se obrnite na skrbnika mesta.');
+
+- posodobljena definicija ('_US_CONFMAIL', 'Potrditveno e-poštno sporočilo za %s poslano.');
+- posodobljeno define('_US_CONFMAIL', 'Če obstaja račun za to e-pošto, boste prejeli navodila za ponastavitev gesla. Po potrebi preverite mapo z vsiljeno pošto ali se obrnite na skrbnika spletnega mesta.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- preimenoval _XOOPS_EDITOR_TINYMCE_LANGUAGE5 v _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- preimenoval _OXYGEN_Server_API v _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- dodano define('_MD_AM_SENDMAIL_NOT_FOUND', 'Binarne datoteke Sendmail ni bilo mogoče najti. Preverite konfiguracijo strežnika.');
+- dodano define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Zaznana ni bila veljavna dvojiška datoteka, združljiva s sendmailom. Namestite MTA (npr. Postfix, msmtp) ali preklopite na SMTP v nastavitvah.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- dodana define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Neznana skupina');
+
+/htdocs/modules/system/language/english/comment.php
+- dodana definicija ('_CM_ADDCOMMENT', 'Dodaj komentar');
+
+
+/htdocs/install/language/english/install.php
+- dodana definicija ('_SPLETNO_IME', 'XOOPS mesto');
+- dodano define('_WEBSITE_SLOGAN', 'Samo uporabite!');
+- dodan define('_WEBSITE_META_KEYWORDS', 'xoops, ogrodje spletne aplikacije, cms, sistem za upravljanje vsebin');
+- dodano define('_WEBSITE_FOOTER', "Poganja XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='Projekt XOOPS'>Projekt XOOPS</a>");
+- dodana definicija ('_WEBSITE_COPYRIGHT', 'Avtorske pravice © 2001-{X_YEAR}');
+- dodano define('_WEBSITE_DESCRIPTION', 'XOOPS je dinamičen objektno usmerjen odprtokodni portalski skript, napisan v PHP.');
+- dodana definicija ('_WEBSITE_CENSOR_REPLACE', 'UPS');
+
+
+================================
+2023/10/01: Različica 2.5.11-končna
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Datoteka je bila naložena, vendar ni bilo mogoče spremeniti načina');
+
+================================
+2023/10/01: Različica 2.5.11-RC3
+================================
+
+SPREMENJENE DATOTEKE:
+upgrade/language/english/upgrade.php
+upgrade/language/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- dodana define('_FAILGETIMG', 'Neuspešno pridobivanje slike %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- dodana define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Začasno onemogoči');
+- dodana definicija ('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-pošta');
+- ​​dodano define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Zasebno sporočilo');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- dodano define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Privzeti način obveščanja');
+- dodano define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Za nove uporabnike, ko se naročijo na obvestila iz npr. foruma.');
+- dodana definicija ('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Različica 2.5.11-RC1
+================================
+
+SPREMENJENE DATOTEKE:
+htdocs/language/english/global.php
+- dodano define('_DB_QUERY_ERROR', 'Poizvedba ni uspela! SQL: %s - Napaka: ');
+- dodana definicija ('_PRINT', 'Natisni');
+- dodana definicija ('_PDF', 'PDF');
+- ​​dodana definicija ('_OFF', 'Off');
+
+================================
+2021/09/02: Različica 2.5.11-beta
+================================
+
+SPREMENJENE DATOTEKE:
+htdocs/language/english/admin.php
+- dodano define('_AD_WARNING_NO_XML', 'Za to funkcijo je potrebna razširitev PHP XML.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- dodano define('_AM_ADMINSTATS_LAST_MONTH', 'Prejšnji mesec');
+- dodan define('_AM_ADMINSTATS_LAST_WEEK', 'Prejšnji teden');
+- dodano define('_AM_ADMINSTATS_LAST_DAY', 'Zadnji dan');
+- ​​dodana define('_AM_ADMINSTATS_LAST_HOUR', 'Zadnja ura');
+
+htdocs/language/english/global.php
+- dodana definicija ('_PRINT', 'Natisni');
+- dodana definicija ('_PDF', 'PDF');
+- ​​dodana definicija ('_OFF', 'Off');
+- spremenjena definicija ('_ON', 'Vklopljeno'); //od 'on'
+
+htdocs/language/english/global.php
+- ​​spremenjena definicija ('_SIZE', 'Velikost'); // velikost pisave
+- spremenjena definicija ('_FONT', 'Pisava'); // družina pisav
+- spremenjena definicija ('_COLOR', 'Barva'); // barva pisave
+
+htdocs/install/language/english/install.php
+- dodano define('ERR_COPY_CONFIG_FILE', 'Ni bilo mogoče kopirati konfiguracijske datoteke %s');
+
+htdocs/install/language/english/welcome.php
+- spremenjene priporočene različice PHP & MySQL, povezave spremenjene na "https:"
+
+htdocs/modules/system/language/english/admin/preferences.php
+- spremenila define('_MD_AM_SMTPHOSTDESC', 'Eno ime gostitelja ali več imen gostiteljev, ločenih s podpičjem.<br>Določite lahko tudi različna vrata za vsakega gostitelja z uporabo te oblike: [ime gostitelja:vrata] (npr. "smtp1.example.com:25;smtp2.example.com").<br>Določite lahko tudi šifriranje vnesite, na primer: (npr. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Hosti bodo preizkušeni po vrstnem redu.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- spremenjena definicija ('_AM_SYSTEM_MODULES_ADMIN', 'Administracija modula XOOPS');
+
+NOVE DATOTEKE:
+htdocs/themes/xswatch4/language/english/main.php
+Začeto kot kopija xswatch/language/english/main.php nato:
+- dodana definicija ('THEME_TOOLBAR_DEBUGMODE', 'Način odpravljanja napak');
+- dodana definicija ('THEME_TOOLBAR_THIS_MODULE', 'Ta modul');
+- dodana definicija ('THEME_PERMISSIONS_LEGEND', 'Dovoljenja in legenda');
+- dodana definicija ('THEME_INBOX_ALERT', 'PM Alert');
+- dodano define('THEME_INBOX_LINK', 'Kliknite tukaj za ogled mape Prejeto!');
+- dodana define('THEME_EVENT_DOWNLOADS', 'Prenosi dogodkov');
+- ​​dodana definicija ('THEME_FILE_NAME', 'Datoteka');
+- dodana definicija ('THEME_FILE_SIZE', 'Velikost');
+- dodana definicija ('THEME_CONTROL_NEXT', 'Naprej');
+- dodana definicija ('THEME_CONTROL_PREVIOUS', 'Prejšnja');
+
+htdocs/language/english/user.php
+- dodano define('_US_DESCRIPTIONMIN', 'Najmanjša zahtevana dolžina: %s');
+- dodano define('_US_DESCRIPTIONMAX', 'Največja dolžina: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- dodan define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} bo natisnil ime ali razimenoval, če je prazno');
+
+htdocs/modules/system/language/english/admin/images.php
+- dodano define("_AM_SYSTEM_IMAGES_SCATDELNG","Te kategorije ni mogoče izbrisati");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​dodano define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Ta modul skrbnik');
+
+IBRISANE DATOTEKE:
+htdocs/modules/system/language/english/admin/users.php
+- izbrisana definicija ('_AM_SYSTEM_USERS_MODIFYUSER', 'Spremeni uporabnika');
+- deleted define('_AM_SYSTEM_USERS_DELUSER', 'Izbriši uporabnika');
+- izbrisana definicija ('_AM_SYSTEM_USERS_GO', 'Pojdi!');
+
+================================
+2019/04/29: Različica 2.5.10 končna
+================================
+DODANO/IZBRISANO DEFINIRA:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- dodano define('_AM_LABEL_BAN_BY_IP', 'Prepoved IP-jev na preverjenih zapisih:');
+- dodano define('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- dodano define('_AM_JS_BANCONFIRM', 'IP prepovedi so OK?');
+- dodana define('_AM_MSG_BANNEDIP', 'IP-ji so prepovedani');
+- dodan define('_AM_ADMINSTATS_TITLE', 'Povzetek dnevnika zaščite');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- dodana definicija ($constpref . '_ADMINSTATS', 'Pregled');
+- ​​dodana definicija ($constpref . '_BANIP_TIME0DSC', 'Čas začasne zaustavitve v sekundah za samodejno prepoved IP');
+
+htdocs/language/english/uploader.php
+- dodano define('_ER_UP_INDEXNOTSET', 'Poskusi pridobiti več datotek, indeks mora biti nastavljen.');
+
+htdocs/language/english/admin.php
+- dodano define('_AD_WARNING_OLD_PHP', 'OPOZORILO: Razmislite o nadgradnji na novejšo različico PHP. Različica %s ali novejša je priporočena in bo potrebna v prihodnjih različicah XOOPS.');
+
+SPREMENJENO DEFINIRA
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Če želite spremeniti predpono,<br> ročno uredite %s/data/secure.php.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- spremenjena priporočena različica PHP, dodan razdelek Posebne opombe za SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- v definiciji '_AM_MODULEADMIN_ADMIN_FOOTER' so spremenjene povezave XOOPS v 'https://xoops.org'
+
+NOVE DATOTEKE:
+ni na voljo
+
+===============================
+2017/08/01: Različica 2.5.9 končna
+===============================
+DODANO/IZBRISANO DEFINIRA
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- dodano define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Znesek');
+- dodano define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Prosimo, vnesite znesek v USD, npr. 25,00 $');
+- dodana definicija ('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- dodana definicija ('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- dodano define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- dodano define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Donirajte s PayPal ali večjo kreditno kartico na spletu!');
+
+htdocs/install/language/english/install.php
+*OPOMBA* Namestitveni program je bil bistveno spremenjen, zato je treba to datoteko pozorno pregledati
+- dodana definicija ("CURL_HTTP", "Knjižnica URL-jev odjemalcev (cURL)");
+- dodana definicija ('XOOPS_COOKIE_DOMAIN_LABEL', 'Domena piškotka za spletno stran');
+- dodano define('XOOPS_COOKIE_DOMAIN_HELP', 'Domena za nastavitev piškotkov. Lahko je prazna, celoten gostitelj iz URL-ja (www.example.com) ali registrirana domena brez poddomen (example.com) za skupno rabo med poddomenami (www.example.com in blog.example.com.)');
+- dodana definicija ('INTL_SUPPORT', 'Funkcije internacionalizacije');
+- dodana definicija ('XOOPS_SOURCE_CODE', "XOOPS na GitHubu");
+- dodana definicija ('XOOPS_INSTALLING', 'Namestitev');
+- dodana definicija ('XOOPS_ERROR_ENCOUNTERED', 'Napaka');
+- dodana define('XOOPS_ERROR_SEE_BELOW', 'Glejte spodaj za sporočila.');
+- ​​dodana definicija ('MODULES_AVAILABLE', 'Razpoložljivi moduli');
+- dodana definicija ('INSTALL_THIS_MODULE', 'Dodaj %s');
+
+htdocs/install/language/english/finish.php
+- sprememba za napotitev novih uporabnikov na xoops.org za informacije o modulih in temah
+
+htdocs/language/english/global.php
+- dodana definicija ('_UPLOAD', 'Naloži');
+- dodana definicija ('_SELECTFILES', 'Izberi datoteke');
+- dodana define('_DROPFILESHERE', 'Spusti datoteke sem');
+- dodana definicija ('_RETRY', 'Poskusi znova');
+- dodana definicija ('_OK', 'V redu');
+- dodano define('_FORMATPROGRESS', '{percent}% od {total_size}');
+- ​​dodana define('_FAILUPLOAD', 'Nalaganje ni uspelo!');
+- dodana definicija ('_WAITINGFORRESPONSE', 'Obdelava...');
+- dodana definicija ('_PAUSED', 'Zaustavljeno');
+- dodano define('_PROCESSINGDROPPEDFILES', 'Obdelava izpuščenih datotek...');
+- dodano define('_TYPEERROR', '{file} ima neveljavno končnico. Veljavne končnice: {extensions}!');
+- dodano define('_SIZEERROR', '{file} je prevelika, največja velikost datoteke je {sizeLimit}!');
+- dodano define('_MINSIZEERROR', '{file} je premajhna, najmanjša velikost datoteke je {minSizeLimit}!');
+- dodano define('_EMPTYERROR', '{datoteka} je prazna, ponovno izberite datoteke brez nje!');
+- ​​dodana definicija ('_NOFILESERROR', 'Ni datotek za nalaganje!');
+- dodano define('_TOOMANYITEMSERROR', 'Naloženih bi bilo preveč elementov ({netItems}). Omejitev elementov je {itemLimit}!');
+- dodano define('_MAXHEIGHTIMAGEERROR', 'Slika je previsoka!');
+- dodano define('_MAXWIDTHIMAGEERROR', 'Slika je preširoka!');
+- dodano define('_MINHEIGHTIMAGEERROR', 'Slika ni dovolj visoka!');
+- dodano define('_MINWIDTHIMAGEERROR', 'Slika ni dovolj široka!');
+- dodano define('_RETRYFAILTOOMANYITEMS', 'Ponovni poskus ni uspel - dosegli ste omejitev datotek!');
+- ​​dodano define('_ONLEAVE', 'Datoteke se nalagajo, če zapustite zdaj, bo nalaganje preklicano!');
+- dodano define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Nepopravljiva napaka - ta brskalnik ne dovoljuje kakršnega koli nalaganja datotek zaradi resnih napak v iOS8 Safari. Prosimo, uporabljajte iOS8 Chrome, dokler Apple ne odpravi teh težav!');
+
+htdocs/language/english/uploader.php
+- dodano define('_ER_UP_INISIZE', 'Naložena datoteka presega direktivo upload_max_filesize v php.ini');
+- dodano define('_ER_UP_FORMSIZE', 'Naložena datoteka presega direktivo MAX_FILE_SIZE, ki je bila podana v obrazcu HTML');
+- dodano define('_ER_UP_PARTIAL', 'Naložena datoteka je bila le delno naložena');
+- dodana define('_ER_UP_NOFILE', 'Nobena datoteka ni bila naložena');
+- dodano define('_ER_UP_NOTMPDIR', 'Manjka začasna mapa');
+- dodano define('_ER_UP_CANTWRITE', 'Datoteke ni bilo mogoče zapisati na disk');
+- dodano define('_ER_UP_EXTENSION', 'Nalaganje datoteke je ustavilo razširitev. Ogled phpinfo()');
+- dodana define('_ER_UP_UNKNOWN', 'Neznana napaka pri nalaganju');
+
+htdocs/language/english/user.php
+- ​​izbrisano define('_US_USECOOKIE', 'Shrani moje uporabniško ime v piškotku za 1 leto');
+
+htdocs/modules/profile/language/english/admin.php
+- dodano define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Ne morete deaktivirati računa spletnega skrbnika');
+
+htdocs/modules/system/language/english/admin/comments.php
+- dodano define('_MP_DELETECOUNT', 'Število članov v skupini je preveliko ( > 4.000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- dodana define('_AM_SYSTEM_USERRANK_ERROR', 'Napake');
+
+upgrade/language/english/upgrade.php
+- dodana definicija ('_LANGUAGE', 'Jezik');
+- dodana definicija ('_SUPPORT', 'Podpora');
+- dodana definicija ('_XOOPS_SOURCE_CODE', 'XOOPS na GitHubu');
+- dodana define('_PATCH_COUNT', 'Sklopi popravkov');
+- dodana definicija ('_USERNAME_PLACEHOLDER', 'Vaše uporabniško ime');
+- dodana definicija ('_PASSWORD_PLACEHOLDER', 'Vaše geslo');
+- dodana definicija ('_CONTINUE', 'Nadaljuj');
+- dodana definicija ('XOOPS_ERROR_ENCOUNTERED', 'Napaka');
+- dodana define('XOOPS_ERROR_SEE_BELOW', 'Glejte spodaj za sporočila.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+- dodana definicija ("THEME_USER_WELCOME", "Dobrodošli");
+
+NOVE DATOTEKE:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- nadgradnja/jezik/angleščina/
+*OPOMBA* Koda nadgradnje je bila bistveno spremenjena, zato je treba te datoteke natančno pregledati
+- premaknjene vse jezikovne datoteke na popravek iz imenikov popravkov v nadgradnjo/jezik/*
+  tj. upgrade/upd-2.0.18-to-2.3.0/language/english.php je postal
+  upgrade/language/english/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (enako kot htdocs/install/language/english/support.php)
+- upgrade/language/english/welcome.php
+
+===============================
+2016/05/27: Različica 2.5.8
+===============================
+DODANO/IZBRISANO DEFINIRA
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- dodano define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Namesti več modulov");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Aktiviraj uporabnika');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Višina bloka (črte)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Poskusi znova');
+define('CHMOD_CHGRP_IGNORE', 'Vseeno uporabi');
+define('CHMOD_CHGRP_ERROR', 'Namestitveni program morda ne bo mogel zapisati konfiguracijske datoteke %1$s.<p>PHP piše datoteke pod uporabnikom %2$s in skupino %3$s.<p>Strašno
+
+SPREMENJENO DEFINIRA
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref. '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Repozitorij kod');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Nastavitve shranjene');
+define('ERR_NEED_WRITE_ACCESS', 'Strežnik mora imeti dostop za pisanje do naslednjih datotek in map<br />(tj. <em>chmod 775 directory_name</em> na strežniku UNIX/LINUX)<br />Če niso na voljo ali niso pravilno ustvarjeni, jih ustvarite ročno in nastavite ustrezna dovoljenja.');
+define('ERR_COPY_MAINFILE', 'Ni bilo mogoče kopirati distribucijske datoteke v %s');
+define('ERR_WRITE_MAINFILE', 'Ni bilo mogoče pisati v %s. Preverite dovoljenje za datoteko in poskusite znova.');
+define('ERR_READ_MAINFILE', 'Ni bilo mogoče odpreti %s za branje');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Repozitorij kod');
+
+NOVE DATOTEKE:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+POSODOBLJEN primer razreda XoopsMailerLocal:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: Različica 2.5.7 končna
+===============================
+DODANO/IZBRISANO DEFINIRA
+
+/install/language/english/install.php
+- dodano define('WRITTEN_LICENSE',"Pisan licenčni ključ XOOPS %s: <strong>%s</strong>");
+
+===============================
+2014/03/18: Različica 2.5.7 RC1
+===============================
+DODANO/IZBRISANO DEFINIRA
+
+/modules/system/language/english/admin.php
+- dodana definicija ('_AM_SYSTEM_USAGE',"Uporaba");
+- dodana definicija ('_AM_SYSTEM_ACTIVE',"Aktivno");
+
+
+===============================
+2012/04/15: Različica 2.5.5
+===============================
+DODANO/IZBRISANO DEFINIRA
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- dodan define("_AM_MODULEADMIN_HOME", "Domača stran");
+- dodano define("_AM_MODULEADMIN_DASHBOARD", "Nadzorna plošča");
+- dodan define("_AM_MODULEADMIN_ABOUT", "O");
+- dodano define("_AM_MODULEADMIN_PERMISSIONS", "Dovoljenja");
+- dodano define("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Izdano: ");
+- dodano define("_AM_MODULEADMIN_ABOUT_AUTHOR","Avtor: ");
+- dodano define("_AM_MODULEADMIN_ABOUT_CREDITS","Krediti: ");
+- dodano define("_AM_MODULEADMIN_ABOUT_LICENSE","Licenca: ");
+- dodano define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Ime avtorja: ");
+- dodano define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Podatki o avtorju");
+- dodano define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Ta modul vzdržuje <a class='tooltip' rel='external' href='http://xoops.org/' title='Visit XOOPS Community'>XOOPS Community</a></div>");
+
+/language/english/calendar.php
+- dodan define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- dodana definicija ($constpref."_ADMINHOME","Domača stran");
+- dodana definicija ($constpref."_ADMINABOUT","O programu");
+- dodana definicija ($constpref.'_STOPFORUMSPAM_ACTION','Ustavi vsiljeno pošto na forumu');
+- dodana define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Preverja podatke POST proti pošiljateljem neželene pošte, registriranim v bazi podatkov www.stopforumspam.com. Zahteva php CURL lib.');
+
+
+/install/language/english/install.php
+- dodana definicija ("FILTER_FUNCTIONS", "Funkcije filtra");
+
+/language/english/global.php
+- dodana definicija ('_DBDATESTRING', 'Y-m-d');
+- dodana definicija ('_DBTIMESTRING', 'H:i:s');
+- dodana definicija ('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- dodana definicija ('_MD_PM_READ', 'Že prebrano');
+
+/modules/system/language/english/admin.php
+- dodan define("_AM_SYSTEM_UNINSTALL","Odstrani");
+
+GLEJ ŠE:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: Različica 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: Različica 2.5.4 RC
+===============================
+
+NOVE DATOTEKE:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+DODANO/IZBRISANO DEFINIRA
+
+/language/english/pmsg.php
+delete define('_MD_PM_READ', 'Že prebrano');
+
+/language/english/user.php
+- dodana definicija ('_US_SKYPE', 'Skype');
+- dodana definicija ('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- izbrisana definicija ("_MD_PM_RECEIVE", "RECEIVE");
+- izbrisana definicija ("_MD_PM_POST","POST");
+- izbrisana definicija ("_MD_PM_READBOX", "READBOX");
+- izbrisano define("_MD_PM_RSAVEBOX","Receive_SAVEBOX");
+- izbrisana definicija ("_MD_PM_SENTBOX", "SENTBOX");
+- izbrisano define("_MD_PM_PSAVEBOX","Post_SAVEBOX");
+- izbrisano define("_MD_PM_SAVED","Shranjeno uspešno");
+- izbrisano define("_MD_PM_TOC","Od: ");
+- izbrisana definicija ("_MD_PM_UID", "ID pošiljatelja");
+
+/language/english/findusers.php
+- dodana definicija ('_MA_USER_FACEBOOK', 'Facebook povezava'); //NAREDITI
+- dodana definicija ('_MA_USER_SKYPE', 'Skype Link');//OPRAVITI
+
+/modules/pm/language/english/modinfo.php
+- dodan define("_MI_PM_ABOUT", "O");
+
+/modules/profile/language/english/admin.php
+- dodan define('_PROFILE_AM_ACTION', 'Dejanje');
+
+/modules/profile/language/english/modinfo.php
+- dodan define("_PROFILE_MI_ABOUT", "O");
+- dodana definicija ("_PROFILE_MI_HOME", "Domača stran");
+
+
+/modules/system/language/english/admin/preferences.php
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Splošne nastavitve");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Nastavitve uporabniških informacij");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Meta oznake in noga");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Možnosti cenzure besed");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Možnosti iskanja");
+- ​​izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Nastavitev e-pošte");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Možnosti avtentikacije");*/
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","Pošteno");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","Pošteno");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","Pošteno");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- izbrisano define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","Pošteno");
+- izbrisano define("_MD_AM_LOADINGIMG", "Prikaži nalaganje ... slike?");
+- izbrisano define("_MD_AM_CHNGUTHEME", "Spremeni temo vseh uporabnikov");
+
+/modules/system/language/english/admin/users.php
+- dodan define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Sprejmi e-pošto od skrbnika");
+
+- izbrisano define("_AM_SYSTEM_USERS_NAV_MANAGER","Upravitelj uporabnikov");
+- izbrisano define("_AM_SYSTEM_USERS_USERPOST","Uporabniške objave");
+- izbrisano define("_AM_SYSTEM_USERS_STORIES","Zgodbe");
+- izbrisano define("_AM_SYSTEM_USERS_COMMENTS","Komentarji");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Pritisnite spodnji gumb za sinhronizacijo podatkov, če menite, da zgornji podatki o objavah uporabnikov ne kažejo dejanskega stanja");
+- izbrisano define("_AM_SYSTEM_USERS_CNGTCOM","Ni bilo mogoče dobiti vseh komentarjev");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","Ni bilo mogoče pridobiti vseh zgodb");
+- izbrisana definicija ("_AM_SYSTEM_USERS_LIST", "Seznam");
+- izbrisano define("_AM_SYSTEM_USERS_USERPOST","Uporabniške objave");
+- izbrisano define("_AM_SYSTEM_USERS_STORIES","Zgodbe");
+- izbrisano define("_AM_SYSTEM_USERS_COMMENTS","Komentarji");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Pritisnite spodnji gumb za sinhronizacijo podatkov, če menite, da zgornje informacije o objavah uporabnikov ne kažejo dejanskega stanja");
+- izbrisano define("_AM_SYSTEM_USERS_CNGTCOM","Ni bilo mogoče dobiti vseh komentarjev");
+- izbrisano define("_AM_SYSTEM_USERS_CNGTST","Ni bilo mogoče dobiti vseh zgodb");
+- izbrisana definicija ("_AM_SYSTEM_USERS_LIST", "Seznam");
+
+xoops_lib/modules/protector/language/english/admin.php
+- dodan define("_AM_ADV_REGISTERGLOBALS2","in vanjo postavi spodnjo vrstico:");
+
+SPREMENJENE DATOTEKE:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+2011/10/05: Različica 2.5.4 beta
+===============================
+- posodobljenih več angleških prevodov (DCrussader/Mamba)
+- izbrisano language/english/calendar.php _CAL_DEF_DATE_FORMAT
+- izbrisano language/english/calendar.php _CAL_TT_DATE_FORMAT
+- izbrisani moduli/system/language/english/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- izbrisani moduli/system/language/english/admin/preferences.php _MD_AM_LOADINGIMG
+- izbrisani moduli/system/language/english/admin/preferences.php _MD_AM_CHNGUTHEME
+- izbrisani moduli/pm/language/english/admin/main.php _MD_PM_RECEIVE, _MD_PM_POST, _MD_PM_READBOX, _MD_PM_RSAVEBOX, _MD_PM_SENTBOX, _MD_PM_PSAVEBOX, _MD_PM_SAVED, _MD_PM_TOC
+- dodano /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- dodan /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- dodan /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- dodano /modules/pm/language/english/modinfo.php _MI_PM_ABOUT
+- dodani moduli/system/language/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- dodan language/english/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- dodana definicija ($constpref.'_STOPFORUMSPAM_ACTION','Ustavi vsiljeno pošto na forumu');
+- dodana define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Preverja podatke POST proti pošiljateljem neželene pošte, registriranim v bazi podatkov www.stopforumspam.com. Zahteva php CURL lib.');
+
+
+
+===============================
+2011/09/06: Različica 2.5.2 RC
+===============================
+ - dodan jezik/angleščina/misc.php _MSC_KLIK_NA_ODPRTO_SLIKO, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_SLIKA
+ - dodan language/english/pmsg.php _MD_PM_SURE_TO_DELETE, _MD_PM_READ
+ - dodani moduli/pm/language/english/admin/main.php _MD_PM_READ, _MD_PM_SUBJECT_ICONS
+ - modules\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - odstranjeni moduli/sistem/teme/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - odstranjeni moduli/system/language/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - dodan jezik/angleščina/koledar.php _CAL_DEF_DATE_FORMAT
+ - dodan jezik/angleščina/koledar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: Različica 2.5.1 RC
+===============================
+
+Dodane jezikovne konstante:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Konstante spremenjenega jezika:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+Odstranjene jezikovne konstante:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
